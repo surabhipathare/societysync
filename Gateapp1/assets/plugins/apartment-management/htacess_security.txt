@@ -1,0 +1,19 @@
+# Protect some other files
+<FilesMatch "(error_log|wp-config.php|php.ini|liesmich.html|readme.html|.[hH][tT][aApP].*|license.txt|(.*)\.ttf|(.*)\.bak)">
+  Order Deny,Allow
+  Deny from all
+</FilesMatch>
+
+# Extra Security Headers
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header always append X-Frame-Options SAMEORIGIN
+    Header set X-Content-Type-Options nosniff
+    Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+    Header set Referrer-Policy "no-referrer-when-downgrade"
+	Header always unset X-Powered-By
+    Header unset X-Powered-By
+</IfModule>
+
+#Directory Browsing
+Options All -Indexes

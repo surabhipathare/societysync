@@ -1,0 +1,352 @@
+/* Custom css*/
+
+.occupied_div
+{
+	display:none;
+}
+.bootstrap-timepicker-widget.timepicker-orient-top::before {
+  top: -7px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-left::before {
+  left: 6px;
+}
+.bootstrap-timepicker-widget.dropdown-menu::before {
+  border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+  border-left: 7px solid rgba(0, 0, 0, 0);
+  border-right: 7px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.bootstrap-timepicker-widget table td a {
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: #303641;
+  display: inline-block;
+  margin: 0;
+  outline: 0 none;
+  padding: 0;
+  width: 100%;
+}
+input.bootstrap-timepicker-hour,input.bootstrap-timepicker-minute {
+  border-radius: 0px !important;
+  border: 1px solid #dedede !important;
+}
+
+
+/********         Chart *****************/
+#chart_div{margin-top: 70px;}
+
+/**** Message ****/
+.mailbox-content .message_for{width:135px;}
+.mailbox-content .message_title{width:200px;}
+
+.profile_data {
+  height: 500px;
+  overflow: scroll;
+  float: left;
+  width: 100%;
+}
+.profile_data .profile-image {
+  margin: 100px 20px 20px;
+}
+
+.profile_data .profile-cover {
+  height: 200px;
+
+}
+.profile_data #main-wrapper{margin-top:50px;}
+
+.updated.below-h2 {
+    text-transform: capitalize;
+}
+/********messagebox css*********/
+
+.apart-management-content  #message   {
+    background: #fff none repeat scroll 0 0;
+    border-left: 4px solid #7ad03a;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 5px 0px 9px;
+    padding: 9px 0px 1px 13px;
+}
+
+/*****/
+#main-wrapper a:focus {
+  box-shadow: none;
+}
+
+
+
+/**** Rinkal changes media query*****/
+
+.modal-body1
+{
+	height:500px;
+    overflow: auto;
+}
+.modal-body1 {
+    position: relative;
+    padding: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+@media only screen and (max-width : 800px) 
+{
+	.modal-body1
+	{
+		height:316px!important;
+		overflow: auto!important;
+	}
+	.overlay-content .prescription_pop_content
+	{
+		height: 358px;
+		overflow: auto;
+	}
+}
+@media only screen and (max-width : 1400px) 
+{
+	.modal-body1
+	{
+		height:186px!important;     /**322px!important;**/
+		overflow: auto!important;
+    }
+	.overlay-content .prescription_pop_content
+	{
+		height: 256px;
+		overflow: auto;
+	}
+	.report-tab .nav-tab
+	{
+		margin-top: 10px;
+		border-bottom: 1px solid #ccc;
+	}
+	.report-tab .nav-tab.nav-tab-active{
+		border-bottom: 0px solid #ccc !important;
+	}
+	.report-tab .nav-tab-wrapper{
+		border-bottom: 0px solid hsl(0, 0%, 80%) !important;
+	}
+}
+
+/**dashboard css rinkal**/
+@media only screen and (max-width : 431px) 
+{
+	.calendar-event .remainder_date {
+    float: left!important;
+	}
+   .calendar-event .remainder_title {
+    float: left!important;
+    width:100%!important;
+    cursor: pointer!important;
+}
+}
+@media only screen and (max-width : 480px) 
+{
+.calendar-event .remainder_date {
+	padding-top:5px!important;
+	padding-bottom:5px!important;
+	}
+
+}
+/*new add deshboard rinkal css*/
+.panel .panel-heading {
+    border-top: 3px solid #d2d6de  !important;
+    border-bottom: 1px solid #ddd !important;
+}
+.panel-white.event .panel-heading {
+    border-top-color: #f39c12 !important;
+}
+.panel-white.priscription .panel-heading {
+    border-top-color: #F25656 !important;
+}
+.panel-white.Appoinment .panel-heading {
+    border-top-color: #12AFCB !important;
+}
+.panel-white.operation .panel-heading {
+    border-top-color: #999933 !important;
+}
+.panel-white.assignbed .panel-heading {
+    border-top-color: #996600 !important;
+}
+.panel-white.nt .panel-heading {
+    border-top-color: #00a65a !important;
+}
+.calendar-event .remainder_date {
+    float: right;
+	width: 180px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    padding: 0 5px;
+    color: #FFF;
+    border-radius: 2px;
+	background-color: #f39c12;
+    background-image: url(../images/vertical_line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.calendar-event .remainder_date_pr {
+    float: right;
+    width: 88px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    padding: 0 10px;
+    color: #FFF;
+    border-radius: 2px;
+}
+
+.calendar-event .remainder_date_pr {
+    background-color: #F25656;
+}
+.Appoinment .calendar-event .remainder_date {
+    background-color: #12AFCB;
+}
+.operation .calendar-event .remainder_date_pr {
+    background-color: #999933;
+}
+.assignbed .calendar-event .remainder_date {
+    background-color: #996600;
+}
+.nt .calendar-event .remainder_date, .nt .panel-heading .view_all {
+    background-color: #00a65a;
+}
+.calendar-event {
+    padding: 10px 0px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #f4f4f4;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+p
+{
+    font-size: 13px;
+}
+
+/*new add rinkal css*/
+.panel-body.patient {
+    border-bottom: 3px solid #22baa0;
+}
+.panel-body.doctor {
+    border-bottom: 3px solid #12AFCB;
+}
+.panel-body.nurse {
+    border-bottom: 3px solid #6A5FAC;
+}
+.panel-body.receptionist {
+    border-bottom: 3px solid #4E5E6A;
+}
+.panel-body.message {
+    border-bottom: 3px solid #0066FF;
+}
+.panel-body.setting {
+    border-bottom: 3px solid #999933;
+}
+.panel-body.appointment {
+    border-bottom: 3px solid #FF9966;
+}
+.panel-body.prescription {
+    border-bottom: 3px solid #0099FF;
+}
+.panel-body.assignbed {
+    border-bottom: 3px solid #996600;
+}
+.panel-body.treatment {
+    border-bottom: 3px solid #003333;
+}
+.panel-body.eventnotice {
+    border-bottom: 3px solid #009933;
+}
+.panel-body.operation_report {
+    border-bottom: 3px solid #330033;
+}
+.panel-body.pharmacist {
+    border-bottom: 3px solid #3B5998;
+}
+.panel-body.medicine {
+    border-bottom: 3px solid #CC0066;
+}
+.panel-body.laboratorist {
+    border-bottom: 3px solid #380000;
+}
+.panel-body.diagnosis {
+    border-bottom: 3px solid #330033;
+}
+.panel-body.accountant {
+    border-bottom: 3px solid #F25656;
+}
+.panel-body.invoice {
+    border-bottom: 3px solid #660033;
+}
+.no-paddingR {
+    padding-right: 0px;
+}
+
+.calendar-event .remainder_title {
+    float: left;
+    width: calc(100% - 180px);
+    cursor: pointer;
+}
+.calendar-event .remainder_title_pr {
+    float: left;
+    width: calc(100% - 88px);
+    cursor: pointer;
+}
+.calendar-event p.Bold {
+    font-weight: 700;
+}
+.panel .panel-heading>img {
+    float: left;
+    padding-right: 6px;
+}
+.width_60b2 {
+    float: left;
+}
+.width_20c {
+    float: left;
+}
+.width_50a1112 {
+    float: left;
+}
+/** rinkal precscription css**/
+.width_20_date {
+    width: 25%;
+    padding-right: 28px;
+}
+.invoicefont123
+{
+    vertical-align: top;
+    position: absolute;
+    top: 0px;
+	right: 24px;
+    background-repeat: no-repeat;
+}
+.invoicefont123 
+{
+    z-index: -1;
+}
+.width_100_123 {
+    width: 100%;
+    padding-top: 34px;
+	float: right;
+}
+.align_left_d{
+	float:left;
+}
+/***rinkal add css in contact***/
+.first_hed 
+{
+    margin-top: 0px;
+}
+.calendar-event p.Bold {
+    font-weight: 700!important;
+}
+
+.calendar-event .remainder_title_pr {
+    float: left!important;
+    width: calc(100% - 88px)!important;
+    cursor: pointer!important;
+}
+.content_width {
+  
+    padding: 0px!important;
+}
+.view_user_document_list_div
+{
+	border: 1px solid #dedede; min-height: 300px; margin-left: 32px;
+}
